@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Welcome this is group 11</h1>
-</body>
+    <link rel="stylesheet" href="login.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header>
+      <h2 class="logo">sinKostan.</h2>
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">To Rent</a>
+        <a href="#">For Sale</a>
+        <a href="3">About US</a>
+        <button class="btnLogin">Login</button>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- Login start -->
+    <div class="container">
+      <div class="form-login">
+        <h2>Login</h2>
+        <p>Welcome, Please enter your account!</p>
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <input type="email" placeholder="example@gmail.com" required />
+          <label for="">Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+          <input type="password" placeholder="**********" required />
+          <label for="">Password</label>
+        </div>
+        <div class="remember-signup">
+          <label for=""><input type="checkbox" />Remember me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="button">Login</button>
+        <p>
+          Don't have an account? <a href="#" class="signup-link">Sign Up</a>
+        </p>
+      </div>
+    </div>
+    <!-- Login end -->
+
+    <script src="script.js"></script>
+  </body>
 </html>
