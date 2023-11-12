@@ -6,7 +6,7 @@
     <title>Login & Signup</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,36 +39,83 @@
     </header>
     <!-- navbar end -->
 
-    <!-- Login start -->
+    <!-- Login & SignUp start -->
     <div class="container">
-      <div class="form-login">
+      <span class="icon-close">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+
+      <!-- form login start -->
+      <div class="form-box login">
         <h2>Login</h2>
         <p>Welcome, Please enter your account!</p>
         <div class="input-box">
           <span class="icon">
             <i class="fa-solid fa-envelope"></i>
           </span>
-          <input type="email" placeholder="example@gmail.com" required />
+          <input type="email" required />
           <label for="">Email</label>
         </div>
         <div class="input-box">
           <span class="icon">
             <i class="fa-solid fa-lock"></i>
           </span>
-          <input type="password" placeholder="**********" required />
+          <input type="password" required />
           <label for="">Password</label>
         </div>
-        <div class="remember-signup">
+        <div class="remember-forgot">
           <label for=""><input type="checkbox" />Remember me</label>
           <a href="#">Forgot Password?</a>
         </div>
         <button type="submit" class="button">Login</button>
-        <p>
-          Don't have an account? <a href="#" class="signup-link">Sign Up</a>
-        </p>
+        <div class="login-register">
+          <p>
+            Don't have an account? <a href="#" class="signup-link">Sign Up</a>
+          </p>
+        </div>
       </div>
+      <!-- form login end -->
+
+      <!-- form signup start -->
+      <div class="form-box signup">
+        <h2>Sign Up</h2>
+        <p>Welcome, Please enter your details!</p>
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-user"></i>
+          </span>
+          <input type="text" required />
+          <label for="">Username</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <input type="email" required />
+          <label for="">Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+          <input type="password" required />
+          <label for="">Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label for=""><input type="checkbox" />I agree to the terms & conditions</label>
+        </div>
+        <button type="submit" class="button">Sign Up</button>
+        <div class="login-register">
+          <p>
+            Already have an account? <a href="#" class="login-link">Login</a>
+          </p>
+        </div>
+      </div>
+      <!-- form signup end -->
+      
     </div>
-    <!-- Login end -->
+    <!-- Login & SignUp end -->
+
 
     <script src="script.js"></script>
   </body>
