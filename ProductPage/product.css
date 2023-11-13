@@ -1,0 +1,77 @@
+/* product css */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+
+.content-1{
+    margin-right: 150px;
+}
+
+.kotak1{
+    width: 700px;
+    height: 350px;
+    background-color: orange;
+    display: flex;
+    justify-content:center;
+    margin: 20px 10px;
+}
+
+.kos1{
+    width: 550px;
+    height: 250px;
+    margin: 50px;
+    border-radius: 10px;
+}
+.descripsi{
+    margin: 60px 23px 16px 18px;
+}
+
+.content-2{
+    margin: 92px 146px 0px -174px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 5rem;
+    margin: 52px 135px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: all;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    transition-duration: .3s;
+    background-color: grey;
+}
+
+.btn1{
+    background-color: red;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.btn2{
+    background-color: darkgreen;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.review{
+    margin: 150px;
+}
+
+.rv1{
+    width: 400px;
+    height: 200px;
+    margin: -90px -60px;
+}
