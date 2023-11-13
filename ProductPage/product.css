@@ -9,36 +9,38 @@ body{
 
 .content-1{
     margin-right: 150px;
+    padding-right: 267px;
 }
 
 .kotak1{
-    width: 700px;
-    height: 350px;
+    width: 804px;
+    height: 449px;
     background-color: orange;
     display: flex;
     justify-content:center;
-    margin: 20px 10px;
+    margin: 76px 62px;
 }
 
 .kos1{
-    width: 550px;
-    height: 250px;
-    margin: 50px;
+    width: 591px;
+    height: 318px;
+    margin: 69px;
     border-radius: 10px;
 }
 .descripsi{
-    margin: 60px 23px 16px 18px;
+    margin: 63px 127px 31px 76px;
+    padding: 0px 0px 0px 0px;
 }
 
 .content-2{
-    margin: 92px 146px 0px -174px;
+    margin: 92px -166px 0px -488px;
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
     gap: 5rem;
-    margin: 52px 135px;
+    margin: 52px 139px;
 }
 
 nav ul li a{
@@ -73,5 +75,5 @@ nav ul li a:hover{
 .rv1{
     width: 400px;
     height: 200px;
-    margin: -90px -60px;
+    margin: 97px -60px;
 }
