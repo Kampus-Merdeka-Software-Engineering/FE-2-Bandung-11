@@ -299,3 +299,36 @@ header {
     width: 500px;
 }
 /* review style end */
+
+/* footer style start */
+.footer {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F58634;
+    padding: 20px 70px;
+    margin-top: 100px;
+}
+
+.footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer > ul {
+    display: flex;
+    gap: 25px;
+}
+
+.footer > ul > li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer > ul > li > a > i {
+    font-size: 25px;
+    color: white;
+}
+/* footer style end */
