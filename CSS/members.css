@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 100px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.navigation > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #828282;
+  font-weight: normal;
+  position: relative;
+  margin-left: 40px;
+}
+
+.navigation > a:hover {
+  color: black;
+}
+
+.navigation > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.navigation > a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.btnLogin {
+  width: 100px;
+  height: 40px;
+  border: 2px solid #f58634;
+  border-radius: 6px;
+  cursor: pointer;
+  font: 1.1em;
+  font-weight: 500;
+  color: #f58634;
+  margin-left: 40px;
+}
+
+.btnLogin:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #f58634;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 2em;
+  margin-right: 2em;
+}
+
+.text {
+  background-color: #f58634;
+  border-radius: 0.5em;
+  width: 100%;
+  height: 6em;
+  text-align: center;
+  font-size: 2em;
+  color: #dfdae3;
+}
+
+.card {
+  box-shadow: 0 0 0.2em rgba(25, 0, 58, 0.25);
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f58634;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #a993ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  margin-top: 1em;
+}
+
+.social-icons {
+  margin-top: 1em;
+}
+
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-size: cover;
+}
+.footer {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f58634;
+  padding: 20px 70px;
+  margin-top: 100px;
+}
+
+.footer > a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer > ul {
+  display: flex;
+  gap: 25px;
+}
+
+.footer > ul > li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.footer > ul > li > a > i {
+  font-size: 25px;
+  color: white;
+}
+
+.icon.ig {
+  background-image: url("https://cdn0.iconfinder.com/data/icons/eon-social-media-contact-info-2/32/ig_instagram_insta_photo-512.png");
+}
+
+.icon.facebook {
+  background-image: url("https://cdn1.iconfinder.com/data/icons/social-media-vol-3/24/_facebook-512.png");
+}
+
+.icon.twitter {
+  background-image: url("https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Twitter_2_glyph_svg-1024.png");
+}
