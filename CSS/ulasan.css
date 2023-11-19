@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body style start */
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* body style end */
+
+/* navbar style start */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.navigation > a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #828282;
+    font-weight: normal;
+    position: relative;
+    margin-left: 40px;
+}
+
+.navigation > a:hover {
+    color: black;
+}
+
+.navigation > a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.navigation > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btnLogin {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #F58634;
+    border-radius: 6px;
+    cursor: pointer;
+    font: 1.1em;
+    font-weight: 500;
+    color: #F58634;
+    margin-left: 40px;
+}
+
+.btnLogin:hover {
+    transition: all .3s ease-in-out;
+    background-color: #f58634;
+    color: white;
+}
+/* navbar style end */
+
+
+/* atas start */
+.atas{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+    
+.atas img {
+    width: 96%; 
+    height: auto; 
+}
+/* atas end */
+
+
+/* carousel start */
+.wrapper{
+    max-width: 100%;
+    width: 180%;
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    padding: 0 35px;
+    position: relative;
+}
+
+.wrapper i{
+    top: 50%; 
+    height: 50px;
+    width: 50px; 
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-150px);
+    box-shadow: 0 1px 2px black;
+    font-size: 2rem;
+}
+
+.wrapper i:first-child{
+    left: 50px;
+}
+
+.wrapper i:last-child{
+    right: 70px;
+}
+
+.wrapper .carousel{
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((101% / 3) - 12px);
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card{
+    height: 500px;
+    min-width: 0;
+    list-style: none;
+    background: white;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: left;
+    font-size: 14px;
+}
+
+.card .imgulasan img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* atur ukuran di layar */
+
+@media screen and (max-width: 900px){
+    /* Navbar */
+    header {
+        padding: 20px 20px;
+      }
+    
+      .logo {
+        font-size: 18px;
+      }
+    
+      .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+      }
+    
+      .navigation > a {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+    
+      .btnLogin {
+        margin-left: 0;
+      }
+    
+    .wrapper .carousel {
+        grid-auto-columns: calc((101% / 3) - 12px);
+    }
+    .wrapper i{
+        top: 290px;
+    }
+    .carousel .card{
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /* Navbar */
+    
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+    .carousel .card{
+        height: 500px;
+    }
+}
+/* layar akhir */
+
+
+/* footer style start */
+.footer {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F58634;
+    padding: 20px 70px;
+    margin-top: 10px;
+}
+
+.footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer > ul {
+    display: flex;
+    gap: 25px;
+}
+
+.footer > ul > li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer > ul > li > a > i {
+    font-size: 25px;
+    color: white;
+}
+/* footer style end */
