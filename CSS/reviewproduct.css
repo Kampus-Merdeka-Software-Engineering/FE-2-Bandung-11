@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar style start */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.navigation > a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #828282;
+    font-weight: normal;
+    position: relative;
+    margin-left: 40px;
+}
+
+.navigation > a:hover {
+    color: black;
+}
+
+.navigation > a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.navigation > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btnLogin {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #F58634;
+    border-radius: 6px;
+    cursor: pointer;
+    font: 1.1em;
+    font-weight: 500;
+    color: #F58634;
+    margin-left: 40px;
+}
+
+.btnLogin:hover {
+    transition: all .3s ease-in-out;
+    background-color: #f58634;
+    color: white;
+}
+/* navbar style end */
+
+/* content start */
+.text{
+    margin: 25px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.content1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.kotak1{
+    width: 639px;
+    height: 600px;
+    margin-left: 20px;
+}
+table{
+    padding: 5px;
+}
+
+.namaKos{
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+.hargaKos{
+    text-align: right;
+    margin-top: -48px;
+    padding: 10px;
+    margin: -95px 20px 0px 0px;
+}
+
+.hargaKos p a{
+    border: 1px solid rgb(207, 207, 207);
+    background-color: rgb(207, 207, 207);
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.hargaKos p a:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+.hargaKos p a img{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.content2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content2 h2{
+    margin: 20px;
+}
+
+.content2 a:hover{
+    color: #F58634;
+    background-color: rgb(207, 207, 207);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.content2 p{
+    margin: 20px;
+}
+
+.content2 h3{
+    margin: 20px;
+    color: #F58634;
+}
+
+.kotak2{
+    width: 295px;
+    height: 297px;
+    align-items: center;
+}
+
+.kotak3{
+    width: 370px;
+    height: 351px;
+    margin: 20px;
+}
+
+.fasilitas{
+    width: 1206px;
+}
+
+.fasilitas tr td{
+    text-align: center;
+}
+
+.icon{
+   width: 80px;
+   height: 80px;
+}
+
+.lokasi{
+    width: 100%;
+    height: 70px;
+    background-color: #f9caa8;
+    margin: 30px;
+}
+
+.lokasi p{
+    text-align: center;
+    color: black;
+    padding: 25px;
+}
+
+/* content end */
+
+/* footer style start */
+.footer {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F58634;
+    padding: 20px 20px;
+    margin-top: 100px;
+}
+
+.footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer > ul {
+    display: flex;
+    gap: 25px;
+}
+
+.footer > ul > li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer > ul > li > a > i {
+    font-size: 25px;
+    color: white;
+}
+/* footer style end */
