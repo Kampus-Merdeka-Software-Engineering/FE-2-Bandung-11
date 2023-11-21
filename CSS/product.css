@@ -135,7 +135,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #C3C3C3;
-    margin-top: 27px;
+    margin-top: 35px;
     margin-left: 30px;
     gap: 5px;
     border-radius: 50px;
@@ -166,6 +166,7 @@ header {
 
 .product-container > img {
     width: 388px;
+    border-radius: 7px;
 }
 
 .desc-product {
