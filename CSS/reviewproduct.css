@@ -89,16 +89,9 @@ header {
 /* navbar style end */
 /* content start */
 .text{
-    margin: 25px;
+    margin: 20px 0px 20px 40px;
 }
 
-h2 a{
-    text-decoration: none;
-    color: black;
-}
-.content{
-    width: 100%;
-}
 .content1{
     width: 100%;
     display: flex;
@@ -106,46 +99,45 @@ h2 a{
     align-items: center;
 }
 .kotak1{
-    width: 620px;
-    height: 565px;
-    margin-left: 20px;
-    margin-top: 1px;
+    width: 638px;
+    height: 424px;
+    margin-left: 22px;
+    border-radius: 5px;
 }
+
 table{
+    margin: 0px;
+}
+
+.kotak2{
+    width: 283px;
+    height: 215px;
+    align-items: center;
     padding: 5px;
+    border-radius: 12px;
 }
 
 .namaKos{
     text-align: left;
-    padding: 10px;
-    margin: 14px;
+    margin-top: 48px;
+    margin-left: 33px;
 }
 
 .hargaKos{
+    margin: 0px 0px 0px 0px;
     text-align: right;
-    margin-top: -48px;
-    padding: 10px;
-    margin: -95px 4px 0px 0px;
+    margin-top: -76px;
+    margin-right: 25px;
 }
 
-.hargaKos p a{
-    border: 1px solid rgb(207, 207, 207);
-    background-color: rgb(207, 207, 207);
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    border-radius: 5px;
+.hargaKos img{
+    width: 313px;
+    height: 56px;
 }
 
-.hargaKos p a:hover{
+.hargaKos a img:hover{
     background-color: white;
     transition: 0.5s;
-}
-
-.hargaKos p a img{
-    width: 25px;
-    height: 25px;
-    margin-right: 15px;
 }
 
 /* carousel start */
@@ -304,12 +296,6 @@ table{
     color: #F58634;
 }
 
-.kotak2{
-    width: 295px;
-    height: 280px;
-    align-items: center;
-}
-
 .kotak3{
     width: 370px;
     height: 351px;
@@ -331,8 +317,8 @@ table{
 }
 
 .lokasi{
-    margin-left: 20px;
-    width: 97%;
+    margin-left: 26px;
+    width: 96%;
     height: 70px;
     background-color: #f9caa8;
 }
