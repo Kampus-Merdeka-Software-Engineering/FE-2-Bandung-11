@@ -1,7 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+/* body style start */
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* body style end */
 
 /* navbar style start */
 header {
@@ -9,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 25px;
+    padding: 20px 100px;
 }
 
 .navbar {
@@ -78,7 +87,6 @@ header {
     color: white;
 }
 /* navbar style end */
-
 /* content start */
 .text{
     margin: 25px;
@@ -88,7 +96,9 @@ h2 a{
     text-decoration: none;
     color: black;
 }
-
+.content{
+    width: 100%;
+}
 .content1{
     width: 100%;
     display: flex;
@@ -96,9 +106,10 @@ h2 a{
     align-items: center;
 }
 .kotak1{
-    width: 639px;
-    height: 600px;
+    width: 620px;
+    height: 565px;
     margin-left: 20px;
+    margin-top: 1px;
 }
 table{
     padding: 5px;
@@ -107,14 +118,14 @@ table{
 .namaKos{
     text-align: left;
     padding: 10px;
-    margin: 10px;
+    margin: 14px;
 }
 
 .hargaKos{
     text-align: right;
     margin-top: -48px;
     padding: 10px;
-    margin: -95px 20px 0px 0px;
+    margin: -95px 4px 0px 0px;
 }
 
 .hargaKos p a{
@@ -137,6 +148,135 @@ table{
     margin-right: 15px;
 }
 
+/* carousel start */
+.wrapper{
+    max-width: 100%;
+    width: 180%;
+    display: flex;
+    justify-content: center;
+    padding: 0 35px;
+    position: relative;
+}
+
+.wrapper i{
+    top: 50%; 
+    height: 50px;
+    width: 50px; 
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-150px);
+    box-shadow: 0 1px 2px black;
+    font-size: 2rem;
+}
+
+.wrapper i:first-child{
+    left: 50px;
+}
+
+.wrapper i:last-child{
+    right: 70px;
+}
+
+.wrapper .carousel{
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((101% / 3) - 12px);
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card{
+    height: 500px;
+    min-width: 0;
+    list-style: none;
+    background: white;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: left;
+    font-size: 14px;
+}
+
+.card .imgulasan img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.card .imgulasan a:hover{
+    background-color: rgb(207, 207, 207);
+    transition-delay: 0.5ms;
+    border-radius: 5px;
+    color: #F58634;
+}
+
+/* atur ukuran di layar */
+
+@media screen and (max-width: 900px){
+    /* Navbar */
+    header {
+        padding: 20px 20px;
+      }
+    
+      .logo {
+        font-size: 18px;
+      }
+    
+      .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+      }
+    
+      .navigation > a {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+    
+      .btnLogin {
+        margin-left: 0;
+      }
+    
+    .wrapper .carousel {
+        grid-auto-columns: calc((101% / 3) - 12px);
+    }
+    .wrapper i{
+        top: 290px;
+    }
+    .carousel .card{
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /* Navbar */
+    
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+    .carousel .card{
+        height: 500px;
+    }
+}
+/* layar akhir */
 .content2{
     width: 100%;
     display: flex;
@@ -166,14 +306,15 @@ table{
 
 .kotak2{
     width: 295px;
-    height: 297px;
+    height: 280px;
     align-items: center;
 }
 
 .kotak3{
     width: 370px;
     height: 351px;
-    margin: 20px;
+    margin-left: 25px;
+    margin-top: 15px;
 }
 
 .fasilitas{
@@ -190,10 +331,10 @@ table{
 }
 
 .lokasi{
-    width: 100%;
+    margin-left: 20px;
+    width: 97%;
     height: 70px;
     background-color: #f9caa8;
-    margin: 30px;
 }
 
 .lokasi p{
@@ -207,13 +348,13 @@ table{
 /* footer style start */
 .footer {
     width: 100%;
-    height: 110px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #F58634;
-    padding: 20px 20px;
-    margin-top: 100px;
+    padding: 20px 70px;
+    margin-top: 60px;
 }
 
 .footer > a {
