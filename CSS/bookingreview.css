@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body style start */
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* body style end */
+
+
+/* navbar style start */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 100px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 800;
+}
+/* navbar style end */
+
+
+/* step progress bar start */
+:root {
+    --grey: #808080;
+    --white: #ffffff;
+    --black: #000000;
+}
+.bar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 200px; 
+    padding-left: 130px;
+    width: 100%;
+    margin-top: 10px;
+}
+.wrapper{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px; 
+}
+.progress-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.progress-container::after{
+    top: 30px;
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 89%;
+    background-color: var(--grey);
+    z-index: 0;
+    left: 2rem;
+}
+.progress{
+    position: absolute;
+    left: 2rem;
+    height: 3px;
+    top: 35%;
+    width: 50%; 
+    transform: translateY(.50%);
+    background-color: #0162DD;
+    z-index: 1;
+}
+.progress-step{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+    color: black;
+    z-index: 2;
+}
+.progress-step .fas{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border: 3px solid var(--grey);
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    font-size: 1rem;
+    background-color: var(--white);
+    margin-bottom: 10px;
+}
+
+.progress-step .fas.active{
+    border: 3px solid #0162DD;
+    color: #0162DD;
+}
+
+
+/* step 2 */
+.progress-step2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+    color: black;
+    z-index: 2;
+}
+.progress-step2 .fas{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0162DD;
+    border: 3px solid #0162DD;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    font-size: 1rem;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.progress-step2 .fas.active{
+    border: 3px solid #0162DD;
+    color: #0162DD;
+}
+/* step progress bar end */
+
+
+/* pilihan kamar kanan start */
+.carousel .card {
+    height: 120px;
+    width: 370px;
+    list-style: none;
+    background: #D9D9D9;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.card .imgbooking img {
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 152px;
+    height: 102px;
+    object-fit: cover;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.card .text {
+    padding-left: 15px;
+}
+
+.card h2{
+    margin: 10px;
+    font-size: 20px;
+}
+.card p {
+    margin: 10px;
+    font-size: 13px;
+}
+
+.carousel .card1 {
+    height: 300px;
+    width: 370px;
+    list-style: none;
+    background: #D9D9D9;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px; 
+    margin: 20px;
+}
+
+.card1 .imgbooking img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain; 
+    margin-bottom: 10px; 
+    padding-top: 10px;
+}
+.card1 .text {
+    text-align: center; 
+}
+
+.card1 h2 {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.card1 p {
+    margin: 10px;
+    font-size: 13px;
+}
+/* pilihan kamar kanan end */
+
+
+/* data penyewa kiri start */
+.content-kiri{
+    padding-top: 15px;
+}
+.content-penyewa{
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.content-penyewa ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.horizontal-line {
+    width: 125%; 
+    margin: 2px auto; 
+  }
+p{
+    font-size: 13px;
+}
+  
+/* data penyewa kiri end */
+
+
+/* button start */
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    position: center;
+    padding-bottom: 30px;
+}
+.btn-container .btn{
+    padding: 0.5rem 1.5rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+    background-color: #F58634;
+    color: #ffffff;
+    cursor: pointer;
+    border: #F58634;
+}
+/* button end */
+
+
+/* Untuk layar dengan lebar 900px start */
+@media (max-width: 900px) {
+    .bar {
+        display: block;
+        padding-left: 20px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .content-kanan {
+        padding-top: 20px;
+    }
+
+    .carousel .card {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .horizontal-line{
+        width: 98%;
+    }
+
+    .footer {
+        padding: 10px 20px;
+    }
+}
+/* Untuk layar dengan lebar 900px end */
+
+/* Untuk layar dengan lebar 600px start */
+@media (max-width: 600px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .bar {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+
+    .progress-container::after {
+        top: 25px;
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 89%;
+        background-color: var(--grey);
+        z-index: 0;
+        left: 2rem;    }
+
+    .progress-step .fas {
+        margin-top: 5px;
+        height: 30px;
+        width: 30px;
+        font-size: 0.8rem;
+    }
+
+    .content-penyewa {
+        padding-left: 10px;
+    }
+
+    .horizontal-line {
+        width: 96%;
+    }
+}
+/* Untuk layar dengan lebar 600px end */
+
+
+/* footer style start */
+.footer {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F58634;
+    padding: 20px 70px;
+    margin-top: 10px;
+}
+
+.footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer > ul {
+    display: flex;
+    gap: 25px;
+}
+
+.footer > ul > li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer > ul > li > a > i {
+    font-size: 25px;
+    color: white;
+}
+/* footer style end */

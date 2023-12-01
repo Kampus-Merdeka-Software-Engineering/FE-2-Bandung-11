@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Review</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/bookingreview.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header> 
+        <h2 class="logo">sinKostan.</h2>
+    </header>
+    <!-- navbar end -->
+
+    <!-- step progress bar start -->
+    <div class="bar">
+    <div class="wrapper">
+      <h2>Booking Kost</h2>
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="progress-step">
+          <i class="fas fa-circle active"></i>Pilih Kamar
+        </div>
+        <div class="progress-step2">
+          <i class="fas fa-circle"></i>Payment
+        </div>
+        <div class="progress-step">
+          <i class="fas fa-circle"></i>Selesai
+        </div>
+      </div>
+    <!-- step progress bar end -->
+
+    <!-- data penyewa kiri start -->
+    <div class="content-kiri">
+      <h3>Data Penyewa</h3>
+      <div class="content-penyewa">
+        <ul>
+          <li>nama penghuni</li>
+          <li>nomer hp</li>
+          <li>email</li>
+          <li>jenis kelamin</li>
+          <li>pekerjaan</li>
+        </ul>
+      </div>
+      <hr class="horizontal-line">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Curabitur tempus urna at turpis condimentum lobortis.</p>
+    </div>
+    </div>
+    <!-- data penyewa kiri end -->
+
+<!-- pilihan kamar kanan start -->
+<div class="content-kanan">
+  <h3>Pilihan Kamar</h3>
+  <ul class="carousel">
+    <li class="card">
+      <div class="imgbooking"><img src="./Assets/booking/booking1.jpeg"></div>
+      <div class="content">
+        <div class="text">
+      <h2>Nama Kamar</h2>
+      <p>Harga Kamar</p>
+      </div>
+      </div>
+    </li>
+    <li class="card1">
+      <div class="imgbooking"><img src="./Assets/booking/QR Code.png"></div>
+      <div class="content">
+        <div class="text">
+        <p>Total yang perlu dibayar</p>
+      <h2>Harga Kamar</h2>
+      <p>silahkan lakukan pembayaran sejumlah nominal yang tertera melalui QR di atas</p>
+      </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+<!-- pilihan kamar kanan end -->
+
+<!-- button start -->
+<div class="btn-container">
+  <button class="btn" onclick="window.location.href='bookingberhasil.html'">Lanjutkan Booking</button>
+</div>
+<!-- button end  -->
+
+
+    <!-- Footer start -->
+    <div class="footer">
+      <a href="">SinKosTan by @Group11</a>
+      <ul>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
+    </div> 
+    <!-- Footer end -->
+
+  </body>
+</html>
+  
