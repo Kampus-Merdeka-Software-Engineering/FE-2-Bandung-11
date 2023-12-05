@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>members</title>
+    <title>Members Page</title>
 
-    
+    <!-- CSS -->
     <link rel="stylesheet" href="CSS/members.css" />
 
-    
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,150 +16,151 @@
       rel="stylesheet"
     />
 
-
+    <!-- Swipper JS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-<body>
-     <!-- navbar start -->
-     <header>
-        <h2 class="logo">sinKostan.</h2>
-        <nav class="navigation">
-          <a href="./index.html">Beranda</a>
-          <a href="./tentang.html">Tentang</a>
-          <a href="./product.html">Cari Kos</a>
-          <a href="./members.html">Members</a>
-          <button class="btnLogin">Login</button>
-    </header>
-    <!-- navbar end -->
-    <section>
-        <div class="row">
-            <div class="text">
-            <p>Our Members</p>
-            <h1>Group 11</h1>
-            <h4>Section Bandung</h4>
+
+  <body>
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <!-- 1 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="Assets/Image/kepalasekolah.jpeg" alt="" class="card-img" />
+              </div>
             </div>
 
-        </div>
-        <div class="row">
-            <!-- Profile Card 1 -->
-            <div class="column">
-                <div class="card">
-                    <div class="img-container">
-                        <img src="Assets/Image/a.jpg" alt="Card Image">
-                    </div>
-                    <p class="username">Andika Ray Syahrony</p>
-                    <div class="social-icons">
-                        <a href="#" class="icon ig"></a>
-                        <a href="#" class="icon twitter"></a>
-                        <a href="#" class="icon facebook"></a>
-                    </div>
-                </div>
-            </div>
+            <div class="card-content">
+              <h2 class="name">Andika Ray Syahrony</h2>
+              <p class="description">Project Leader</p>
 
-            <!-- Profile Card 2 -->
-            <div class="column">
-                <div class="card">
-                    <div class="img-container">
-                        <img src="Assets/Image/r.jpg" alt="Card Image">
-                    </div>
-                    <p class="username">Rinaldi Prasya</p>
-                    <div class="social-icons">
-                        <a href="#" class="icon ig"></a>
-                        <a href="#" class="icon twitter"></a>
-                        <a href="#" class="icon facebook"></a>
-                    </div>
-                </div>
+              <button class="button">View More</button>
             </div>
-
-            <!-- Profile Card 3 -->
-            <div class="column">
-                <div class="card">
-                    <div class="img-container">
-                        <img src="Assets/Image/f.jpg" alt="Card Image">
-                    </div>
-                    <p class="username">Farah Fadhilah</p>
-                    <div class="social-icons">
-                        <a href="#" class="icon ig"></a>
-                        <a href="#" class="icon twitter"></a>
-                        <a href="#" class="icon facebook"></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Profile Card 4 -->
-            <div class="column">
-                <div class="card">
-                    <div class="img-container">
-                        <img src="Assets/Image/au.jpg" alt="Card Image">
-                    </div>Aurelia Stefannie Rachelita</p>
-                    <div class="social-icons">
-                        <a href="#" class="icon ig"></a>
-                        <a href="#" class="icon twitter"></a>
-                        <a href="#" class="icon facebook"></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Profile Card 5 -->
-            <div class="column">
-                <div class="card">
-                    <div class="img-container">
-                        <img src="Assets/Image/t.jpg" alt="Card Image">
-                    </div>
-                    <p class="username">Moh.Teguh Santoso</p>
-                    <div class="social-icons">
-                        <a href="#" class="icon ig"></a>
-                        <a href="#" class="icon twitter"></a>
-                        <a href="#" class="icon facebook"></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Profile Card 6 -->
-            <div class="column">
-                <div class="card">
-                    <div class="img-container">
-                        <img src="Assets/Image/m.jpg" alt="Card Image">
-                    </div>
-                    <p class="username">Maurina</p>
-                    <div class="social-icons">
-                        <a href="#" class="icon ig"></a>
-                        <a href="#" class="icon twitter"></a>
-                        <a href="#" class="icon facebook"></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Profile Card 7 -->
-            <div class="column">
-                <div class="card">
-                    <div class="img-container">
-                        <img src="Assets/Image/rf.jpg" alt="Card Image">
-                    </div>
-                    <p class="username">Rifa Nur Anisa</p>
-                    <div class="social-icons">
-                        <a href="#" class="icon ig"></a>
-                        <a href="#" class="icon twitter"></a>
-                        <a href="#" class="icon facebook"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <a href="">SinKosTan by @Group11</a>
-            <ul>
-              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
           </div>
-        
-    </section>
-</body>
+
+          <!-- 2 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="Assets/Image/Rinaldi.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Rinaldi Prasya</h2>
+              <p class="description">Frontend Developer</p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="Assets/Image/f.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Farah Fadhilah</h2>
+              <p class="description">Frontend Developer</p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="Assets/Image/au.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Aurelia Stefannie R</h2>
+              <p class="description">Backend Developer</p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="Assets/Image/t.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Teguh Santoso</h2>
+              <p class="description">Backend Developer</p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="Assets/Image/rf.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Rifa Nur Arisa</h2>
+              <p class="description">Quality Assurance</p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="Assets/Image/m.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Maurina</h2>
+              <p class="description">Quality Assurance</p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/members.js"></script>
+  </body>
 </html>

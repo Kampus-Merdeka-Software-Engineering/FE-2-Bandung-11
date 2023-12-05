@@ -1,202 +1,122 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  height: 100%;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-}
-
-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 100px;
-}
-
-.navbar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 20px 100px;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 800;
-}
-
-.navigation > a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #828282;
-  font-weight: normal;
-  position: relative;
-  margin-left: 40px;
-}
-
-.navigation > a:hover {
-  color: black;
-}
-
-.navigation > a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 3px;
-  background: black;
-  border-radius: 5px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s;
-}
-
-.navigation > a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.btnLogin {
-  width: 100px;
-  height: 40px;
-  border: 2px solid #f58634;
-  border-radius: 6px;
-  cursor: pointer;
-  font: 1.1em;
-  font-weight: 500;
-  color: #f58634;
-  margin-left: 40px;
-}
-
-.btnLogin:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #f58634;
-  color: white;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2em 1em;
   justify-content: center;
-}
-
-.column {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 30%;
-  margin-bottom: 2em;
-  margin-right: 2em;
+  background-color: rgb(214, 214, 214);
 }
 
-.text {
-  background-color: #f58634;
-  border-radius: 0.5em;
+/* members style start */
+.slide-container {
+  max-width: 950px;
   width: 100%;
-  height: 6em;
-  text-align: center;
-  font-size: 2em;
-  color: #dfdae3;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
 }
 
 .card {
-  box-shadow: 0 0 0.2em rgba(25, 0, 58, 0.25);
-  border-radius: 0.6em;
-  color: #1f003b;
-  cursor: pointer;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  background-color: #f58634;
-  margin-bottom: 1em;
-  padding: 1em;
+  width: 320px;
+  border-radius: 25px;
+  background-color: #fff;
 }
 
-.card .img-container {
-  width: 8em;
-  height: 8em;
-  background-color: #a993ff;
-  border-radius: 50%;
+.image-content,
+.card-content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  overflow: hidden;
-  margin: 0 auto;
+  padding: 10px 14px;
 }
 
-.card img {
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
+  background-color: #F58634;
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #F58634;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
-  object-fit: cover;
+  background: #fff;
+  padding: 3px;
 }
 
-.username {
-  margin-top: 1em;
-}
-
-.social-icons {
-  margin-top: 1em;
-}
-
-.icon {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  background-size: cover;
-}
-.footer {
+.card-img {
+  height: 100%;
   width: 100%;
-  height: 110px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f58634;
-  padding: 20px 70px;
-  margin-top: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #F58634;
 }
 
-.footer > a {
-  text-decoration: none;
-  color: white;
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
 }
 
-.footer > ul {
-  display: flex;
-  gap: 25px;
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
 }
 
-.footer > ul > li {
-  list-style-type: none;
-  text-decoration: none;
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #F58634;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
 }
 
-.footer > ul > li > a > i {
-  font-size: 25px;
-  color: white;
+.button:hover {
+  background: #de752a;
 }
 
-.icon.ig {
-  background-image: url("https://cdn0.iconfinder.com/data/icons/eon-social-media-contact-info-2/32/ig_instagram_insta_photo-512.png");
+.button:active {
+  background: #F58634;
 }
-
-.icon.facebook {
-  background-image: url("https://cdn1.iconfinder.com/data/icons/social-media-vol-3/24/_facebook-512.png");
-}
-
-.icon.twitter {
-  background-image: url("https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Twitter_2_glyph_svg-1024.png");
-}
+/* members style end */
