@@ -189,19 +189,14 @@ header {
     line-height: 130%;
 }
 
-.kost-facility {
-    margin-top: 15px;
-    color: rgba(0, 0, 0, 0.548);
-}
-
 .kost-price {
     margin-top: 15px;
     font-weight: bold;
 }
 
-.kost-discount {
-    font-weight: bold;
-    color: red;
+.kost-desc {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.548);
 }
 
 .product-container:nth-child(4) {
