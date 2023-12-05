@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body style start */
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* body style end */
+
+
+/* navbar style start */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.navigation > a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #828282;
+    font-weight: normal;
+    position: relative;
+    margin-left: 40px;
+}
+
+.navigation > a:hover {
+    color: black;
+}
+
+.navigation > a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.navigation > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btnLogin {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #F58634;
+    border-radius: 6px;
+    cursor: pointer;
+    font: 1.1em;
+    font-weight: 500;
+    color: #F58634;
+    margin-left: 40px;
+}
+
+.btnLogin:hover {
+    transition: all .3s ease-in-out;
+    background-color: #f58634;
+    color: white;
+}
+/* navbar style end */
+
+/* profile start */
+.profile {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-left: 100px;
+}
+
+.setting > i {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.setting > button {
+    width: 120px;
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.setting > button:hover {
+    background-color: #F58634;
+    color: white;
+}
+
+.profile-container {
+    margin-left: 100px;
+}
+
+.profile-container > h2 {
+    margin-bottom: 30px;
+}
+
+.box-biodata {
+    display: flex;
+    gap: 200px;
+}
+
+.box-email {
+    margin-bottom: 20px;
+}
+
+.box-name {
+    margin-bottom: 20px;
+}
+
+.box-date {
+    margin-bottom: 20px;
+}
+
+.box-job {
+    margin-bottom: 20px;
+}
+
+.box-gender {
+    margin-bottom: 20px;
+}
+
+.box-phone {
+    margin-bottom: 20px;
+}
+/* profile end */
+
+/* footer style start */
+.footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F58634;
+    padding: 20px 70px;
+    margin-top: 138px;
+}
+
+.footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer > ul {
+    display: flex;
+    gap: 25px;
+}
+
+.footer > ul > li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer > ul > li > a > i {
+    font-size: 25px;
+    color: white;
+}
+/* footer style end */
