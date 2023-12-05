@@ -93,10 +93,13 @@ header {
 
 /* profile start */
 .profile {
-    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 101px;
 }
 
 .setting {
@@ -105,7 +108,6 @@ header {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding-left: 100px;
 }
 
 .setting > i {
@@ -173,7 +175,6 @@ header {
     align-items: center;
     background-color: #F58634;
     padding: 20px 70px;
-    margin-top: 138px;
 }
 
 .footer > a {
