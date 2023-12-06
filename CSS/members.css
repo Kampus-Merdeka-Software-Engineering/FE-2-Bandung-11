@@ -13,6 +13,78 @@ body {
   background-color: rgb(214, 214, 214);
 }
 
+/* navbar style start */
+nav.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Tetap di atas saat digulir */
+  top: 0;
+  left: 0;
+  padding: 20px 100px;
+  background-color: white;
+  z-index: 1000; /* Pastikan di atas elemen lain */
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: 800;
+  margin-right: 400px;
+}
+
+.navigation > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #828282;
+  font-weight: normal;
+  position: relative;
+  margin-left: 40px;
+}
+
+.navigation > a:hover {
+  color: black;
+}
+
+.navigation > a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s;
+}
+
+.navigation > a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+} 
+
+.btnLogin {
+  width: 100px;
+  height: 40px;
+  border: 2px solid #F58634;
+  border-radius: 6px;
+  cursor: pointer;
+  font: 1.1em;
+  font-weight: 500;
+  color: #F58634;
+  margin-left: 40px;
+}
+
+.btnLogin:hover {
+  transition: all .3s ease-in-out;
+  background-color: #f58634;
+  color: white;
+}
+
+/* navbar style end */
+
 /* members style start */
 .slide-container {
   max-width: 950px;

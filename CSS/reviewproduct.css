@@ -143,6 +143,11 @@ table{
     height: 22px;
 }
 
+.button a{
+    text-decoration: none;
+    color: black;
+}
+
 .button:hover{
     background-color: white;
     transition: 0.5s;
