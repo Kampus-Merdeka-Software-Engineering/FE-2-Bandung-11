@@ -1,203 +1,113 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-/* body style start */
 body{
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-}
-/* body style end */
-
-
-/* navbar style start */
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px 100px;
+    padding: 10px;
 }
 
-.navbar {
+.container {
+    max-width: 550px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px 100px;
+    background: orange;
+    padding: 25px 30px;
+    border-radius: 5px;
 }
 
-.logo{
-    font-size: 24px;
-    font-weight: 800;
+.container > .title {
+    font-size: 25px;
+    font-weight: 500;
 }
 
-.navigation > a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #828282;
-    font-weight: normal;
-    position: relative;
-    margin-left: 40px;
-}
-
-.navigation > a:hover {
-    color: black;
-}
-
-.navigation > a::after {
+.container > .title::before {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -6px;
-    width: 100%;
+    bottom: 0;
     height: 3px;
-    background: black;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform .5s;
+    width: 30px;
+    background: #fff;
 }
 
-.navigation > a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-.btnLogin {
-    width: 100px;
-    height: 40px;
-    border: 2px solid #F58634;
-    border-radius: 6px;
-    cursor: pointer;
-    font: 1.1em;
-    font-weight: 500;
-    color: #F58634;
-    margin-left: 40px;
-}
-
-.btnLogin:hover {
-    transition: all .3s ease-in-out;
-    background-color: #f58634;
-    color: white;
-}
-/* navbar style end */
-
-/* profile start */
-.profile {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    margin-bottom: 48px;
-}
-
-.setting {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.setting > i {
-    font-size: 80px;
-    margin-bottom: 20px;
-}
-
-.setting > button {
-    width: 120px;
-    height: 25px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.setting > button:hover {
-    background-color: #F58634;
-    color: white;
-}
-
-.logout {
-    margin-top: 60px;
-}
-
-.profile-container {
-    margin-left: 100px;
-}
-
-.profile-container > h2 {
-    margin-bottom: 30px;
-}
-
-.box-biodata {
-    display: flex;
-    gap: 200px;
-}
-
-.box-email {
-    margin-bottom: 20px;
-}
-
-.box-name {
-    margin-bottom: 20px;
-}
-
-.box-date {
-    margin-bottom: 20px;
-}
-
-.box-job {
-    margin-bottom: 20px;
-}
-
-.box-gender {
-    margin-bottom: 20px;
-}
-
-.box-phone {
-    margin-bottom: 20px;
-}
-/* profile end */
-
-/* footer style start */
-.footer {
-    width: 100%;
-    height: 80px;
+.container > form > .user-details {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #F58634;
-    padding: 20px 70px;
+    flex-wrap: wrap;
+    margin: 20px 0 12px 0;
 }
 
-.footer > a {
-    text-decoration: none;
-    color: white;
+form > .user-details > .input-box {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
 }
 
-.footer > ul {
+form > .user-details > .input-box > input {
+    width: 100%;
+    height: 35px;
+    /* outline: none; */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+}
+
+.user-details > .input-box > .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.gender-details {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.gender-title {
+    font-size: px;
+    font-weight: 500;
+}
+
+.category {
+    width: 60%;
     display: flex;
-    gap: 25px;
+    justify-content: space-between;
+    margin: 14px 0;
 }
 
-.footer > ul > li {
-    list-style-type: none;
-    text-decoration: none;
+.category > label {
+    margin-right: 30px;
 }
 
-.footer > ul > li > a > i {
-    font-size: 25px;
-    color: white;
+.button {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    margin-top: 20px;
 }
-/* footer style end */
+
+.button > input {
+    width: 40%;
+    height: 80%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button > input:hover {
+    background-color: #dddddd;
+    border: 1px solid black;
+}
+
+.button > input:active {
+    background-color: #fff;
+    border: none;
+}

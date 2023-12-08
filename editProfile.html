@@ -1,96 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Profile Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./CSS/profile.css" />
+    <link rel="stylesheet" href="CSS/editProfile.css" />
 
-    <!-- Font -->
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Edit Profile</div>
+      <form action="#">
+        <div class="user-details">
+          <!-- Email start -->
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Masukan Email Anda" required />
+          </div>
+          <!-- Email end -->
 
-    <!-- fontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-</head>
-<body>
-     <!-- navbar start -->
-     <header>
-        <h2 class="logo">sinKostan.</h2>
-        <nav class="navigation">
-          <a href="./index.html">Beranda</a>
-          <a href="./tentang.html">Tentang</a>
-          <a href="./product.html">Cari Kos</a>
-          <a href="./members.html">Members</a>
-    </header>
-    <!-- navbar end -->
+          <!-- Nama start -->
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Masukan Nama Anda" required />
+          </div>
+          <!-- Nama end -->
 
-    <!-- profile start -->
-    <div class="profile">
-        <div class="setting">
-            <i class="fa-solid fa-user"></i>
-            <button>Edit Profile</button>
-            <button>Ubah Password</button>
-            <button>Status Booking</button>
-            <button class="logout">Keluar</button>
-        </div>
-        <div class="profile-container">
-            <h2>Your Profile :</h2>
-            <div class="box-biodata">
-                <div class="group-1">
-                    <div class="box-email">
-                        <h4>Email</h4>
-                        <p>Stevenbarker@gmail.com</p>
-                    </div>
-                    <div class="box-name">
-                        <h4>Nama</h4>
-                        <p>Steven Barker</p>
-                    </div>
-                    <div class="box-date">
-                        <h4>Tanggal Lahir</h4>
-                        <p>18-06-1998</p>
-                    </div>
-                </div>
-                <div class="group-2">
-                    <div class="box-job">
-                        <h4>Pekerjaan</h4>
-                        <p>Mahasiswa</p>
-                    </div>
-                    <div class="box-gender">
-                        <h4>Jenis Kelamin</h4>
-                        <p>Laki-laki</p>
-                    </div>
-                    <div class="box-phone">
-                        <h4>No Telepon</h4>
-                        <p>087774315677</p>
-                    </div>
-                </div>
+          <!-- Tanggal Lahir start -->
+          <div class="input-box">
+            <span class="details">Date of Birth</span>
+            <input type="date" placeholder="Masukan Tanggal Lahir" required />
+          </div>
+          <!-- Tanggal Lahir end -->
+
+          <!-- Pekerjaan start -->
+          <div class="input-box">
+            <span class="details">Status</span>
+            <input type="text" placeholder="Pekerjaan Anda" required />
+          </div>
+          <!-- Pekerjaan end -->
+
+          <!-- No Telp start -->
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" placeholder="" required />
+          </div>
+          <!-- No Telp end -->
+
+          <div class="input-box"></div>
+
+          <!-- Jenis Kelamin start -->
+          <div class="gender-details">
+            <span class="gender-title">Gender :</span>
+            <div class="category">
+                <form action="">
+                    <input type="radio" id="Laki-laki" name="gender" value="Laki-laki">
+                    <label for="Laki-laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="gender" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </form>
             </div>
+          </div>
+          <!-- Jenis Kelamin end -->
         </div>
+        <div class="button">
+          <input type="submit" value="Save Changes" />
+        </div>
+      </form>
     </div>
-    <!-- profile end -->
-
-    <!-- Footer start -->
-    <div class="footer">
-        <a href="./members.html">SinKosTan by @Group11</a>
-        <ul>
-            <li><a href="https://instagram.com/sinkostanyuk?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=61554459172798"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/sinkostanyuk?t=3iUBTykqyV3ZAd6V5qakwg&s=08"><i class="fa-brands fa-twitter"></i></a></li>    
-        </ul>
-      </div>
-      <!-- Footer end -->
-</body>
+  </body>
 </html>
