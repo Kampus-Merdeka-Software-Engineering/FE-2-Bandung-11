@@ -153,6 +153,30 @@ table{
     transition: 0.5s;
 }
 
+.button1{
+    width: 205px;
+    height: 36px;
+    font-size: 15px;
+    background-color: #F58634;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.button1 img{
+    width: 22px;
+    height: 22px;
+}
+
+.button1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.button1:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
 /* carousel start */
 .wrapper{
     max-width: 100%;
