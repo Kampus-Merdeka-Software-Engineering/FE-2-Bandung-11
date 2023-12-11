@@ -67,7 +67,6 @@ function loadData() {
 
 function saveDataToServer(selectedKamar) {
     const apiUrl = 'https://be-2-bandung-11-production.up.railway.app/booking'; 
-    // Menyiapkan data yang akan dikirim ke server
     const dataToSend = {
       kamarId: selectedKamar.id_kamar,
       // Tambahkan properti lain sesuai kebutuhan
@@ -96,6 +95,7 @@ function saveDataToServer(selectedKamar) {
     const selectedKamarId = 'get_selected_kamar_id';  
     saveDataToServer({ id_kamar: selectedKamarId })
       .then(() => {
+        // Setelah data berhasil disimpan, arahkan ke halaman review
         window.location.href = './bookingreview.html';
       })
       .catch((error) => {
