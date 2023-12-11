@@ -57,12 +57,13 @@
         <!-- search start -->
         <div class="search">
             <div class="search-input">
-                <p>Pilih Kost</p>
-                <input id="searchInput" placeholder="Masukan nama lokasi/alamat/area" />
+                <!-- <p>Pilih Kost</p> -->
+                <input type="text" id="input-box" placeholder="Cari Kost" autocomplete="off">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </div>
-            <button>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+            <div class="result-box"></div>
         </div>
         <!-- search start -->
 
@@ -138,5 +139,8 @@
       </ul>
     </div>
     <!-- Footer end -->
+
+    <!-- JS -->
+    <script src="./JS/index.js"></script>
   </body>
 </html>
