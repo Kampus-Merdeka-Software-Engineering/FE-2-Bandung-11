@@ -15,10 +15,10 @@ function loadData() {
     //fetch data kamar
     const kamarRequest = fetch(kamarURL).then(response => response.json());
 
-    // gabungkan kedua promise fetch
+    // Gabungkan kedua promise fetch
     Promise.all([userRequest, kamarRequest])
         .then(([userData, kamarData]) => {
-            // proses data user
+            // Proses data user
             let userOutput = '';
             const firstEntryUser = userData[0];
             if (firstEntryUser) {
@@ -34,7 +34,7 @@ function loadData() {
                 console.error('No user data found.');
             }
 
-            // proses data kamar
+            // Proses data kamar
             let kamarOutput = '';
             kamarData.forEach((kamar) => {
                 kamarOutput += `
@@ -67,8 +67,10 @@ function loadData() {
 
 function saveDataToServer(selectedKamar) {
     const apiUrl = 'https://be-2-bandung-11-production.up.railway.app/booking'; 
+    // Menyiapkan data yang akan dikirim ke server
     const dataToSend = {
       kamarId: selectedKamar.id_kamar,
+      // Tambahkan properti lain sesuai kebutuhan
     };
   
     const requestOptions = {
@@ -91,12 +93,10 @@ function saveDataToServer(selectedKamar) {
   }
   
   function saveDataAndNavigateToReview() {
-    // Implementasikan logika untuk menyimpan data ke server
-    const selectedKamarId = 'get_selected_kamar_id';  // Gantilah dengan cara mendapatkan ID kamar yang dipilih
+    const selectedKamarId = 'get_selected_kamar_id';  
     saveDataToServer({ id_kamar: selectedKamarId })
       .then(() => {
-        // Setelah data berhasil disimpan, arahkan ke halaman review
-        window.location.href = 'bookingreview.html';
+        window.location.href = './bookingreview.html';
       })
       .catch((error) => {
         console.error('Error:', error);
