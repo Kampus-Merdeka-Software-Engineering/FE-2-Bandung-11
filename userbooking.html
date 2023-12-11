@@ -54,7 +54,7 @@
     <div class="content-kiri">
       <h3>Data Penyewa</h3>
       <div class="content-penyewa">
-        <ul>
+        <ul id="user-data-list">
           <li>nama penghuni</li>
           <li>nomer hp</li>
           <li>email</li>
@@ -63,10 +63,7 @@
         </ul>
       </div>
       <hr class="horizontal-line">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-        Curabitur tempus urna at turpis condimentum lobortis.</p>
+      <p>Data di atas merupakan data penyewa yang akan digunakan untuk menempati kost. Siapkan kartu identitas anda saat akan check in</p>
     </div>
     </div>
     <!-- fata penyewa kiri end -->
@@ -74,9 +71,9 @@
 <!-- pilih kamar kanan start -->
 <div class="content-kanan">
   <h3>Pilih Kamar</h3>
-  <ul class="carousel">
+  <ul class="carousel" id="kamar-list" >
     <li class="card">
-      <div class="imgbooking"><img src="./Assets/booking/booking1.jpeg"></div>
+      <div class="imgbooking"><img src="booking1.jpeg"></div>
       <div class="content">
         <div class="text">
       <h2>Nama Kamar</h2>
@@ -85,7 +82,7 @@
       </div>
     </li>
     <li class="card">
-      <div class="imgbooking"><img src="./Assets/booking/booking2.png"></div>
+      <div class="imgbooking"><img src="booking2.png"></div>
       <div class="content">
         <div class="text">
       <h2>Nama Kamar</h2>
@@ -94,7 +91,7 @@
       </div>
     </li>
     <li class="card">
-      <div class="imgbooking"><img src="./Assets/booking/booking3.jpg"></div>
+      <div class="imgbooking"><img src="booking3.jpg"></div>
       <div class="content">
         <div class="text">
       <h2>Nama Kamar</h2>
@@ -107,22 +104,21 @@
 </div>
 <!-- pilih kamar kanan end -->
 
-<!-- button start -->
 <div class="btn-container">
-  <button class="btn" onclick="window.location.href='bookingreview.html'">Lanjutkan Booking</button>
+  <button class="btn" onclick="saveDataAndNavigateToReview()">Lanjutkan Booking</button>
 </div>
 <!-- button end -->
 
     <!-- Footer start -->
     <div class="footer">
-      <a href="./members.html">SinKosTan by @Group11</a>
+      <a href="">SinKosTan by @Group11</a>
       <ul>
-        <li><a href="https://instagram.com/sinkostanyuk?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=61554459172798"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="https://twitter.com/sinkostanyuk?t=3iUBTykqyV3ZAd6V5qakwg&s=08"><i class="fa-brands fa-twitter"></i></a></li>    
-  </ul>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
     </div> 
     <!-- Footer end -->
-
+    <script src="/JS/userbooking.js"></script>
   </body>
 </html>

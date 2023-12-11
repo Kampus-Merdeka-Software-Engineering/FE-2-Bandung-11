@@ -6,7 +6,7 @@
     <title>Edit Profile</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/editProfile.css" />
+    <link rel="stylesheet" href="./CSS/editProfile.css" />
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,70 +19,71 @@
   <body>
     <!-- navbar start -->
     <header> 
-      <nav class="navigation">
-          <h2 class="logo">sinKostan.</h2>
-          <a href="./index.html">Beranda</a>
-          <a href="./tentang.html">Tentang</a>
-          <a href="./product.html">Cari Kos</a>
-          <a href="./members.html">Members</a>
-          <button class="btnLogin" onclick="location.href='./login.html'">Login</button>
-        </nav>
-  </header>
-  <!-- navbar end -->
+        <nav class="navigation">
+            <h2 class="logo">sinKostan.</h2>
+            <a href="./index.html">Beranda</a>
+            <a href="./tentang.html">Tentang</a>
+            <a href="./product.html">Cari Kos</a>
+            <a href="./members.html">Members</a>
+            <button class="btnLogin" onclick="location.href='./login.html'">Login</button>
+          </nav>
+    </header>
+    <!-- navbar end -->
 
 
     <div class="container">
       <div class="title">Edit Profile</div>
       <form action="#">
         <div class="user-details">
+          <!-- ... -->
           <!-- Email start -->
           <div class="input-box">
-            <span class="details">Email</span>
-            <input type="email" placeholder="Masukan Email Anda" required />
+              <span class="details">Email</span>
+              <input type="email" id="emailInput" placeholder="Masukan Email Anda" required />
           </div>
           <!-- Email end -->
-
+      
           <!-- Nama start -->
           <div class="input-box">
-            <span class="details">Full Name</span>
-            <input type="text" placeholder="Masukan Nama Anda" required />
+              <span class="details">Full Name</span>
+              <input type="text" id="fullNameInput" placeholder="Masukan Nama Anda" required />
           </div>
           <!-- Nama end -->
-
+      
           <!-- Tanggal Lahir start -->
           <div class="input-box">
-            <span class="details">Date of Birth</span>
-            <input type="date" placeholder="Masukan Tanggal Lahir" required />
+              <span class="details">Date of Birth</span>
+              <input type="date" id="dobInput" placeholder="Masukan Tanggal Lahir" required />
           </div>
           <!-- Tanggal Lahir end -->
-
+      
           <!-- Pekerjaan start -->
           <div class="input-box">
-            <span class="details">Status</span>
-            <input type="text" placeholder="Pekerjaan Anda" required />
+              <span class="details">Status</span>
+              <input type="text" id="statusInput" placeholder="Pekerjaan Anda" required />
           </div>
           <!-- Pekerjaan end -->
-
+      
           <!-- No Telp start -->
           <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input type="number" placeholder="" required />
+              <span class="details">Phone Number</span>
+              <input type="number" id="phoneNumberInput" placeholder="" required />
           </div>
           <!-- No Telp end -->
-
+      
           <div class="input-box"></div>
-
+      
           <!-- Jenis Kelamin start -->
           <div class="gender-details">
-            <span class="gender-title">Gender :</span>
-            <div class="category">
-                <form action="">
-                    <input type="radio" id="Laki-laki" name="gender" value="Laki-laki">
-                    <label for="Laki-laki">Laki-laki</label>
-                    <input type="radio" id="perempuan" name="gender" value="perempuan">
-                    <label for="perempuan">Perempuan</label>
-                </form>
-            </div>
+              <span class="gender-title">Gender :</span>
+              <div class="category">
+                  <form action="">
+                      <input type="radio" id="male" name="gender" value="Laki-laki">
+                      <label for="male">Laki-laki</label>
+                      <input type="radio" id="female" name="gender" value="Perempuan">
+                      <label for="female">Perempuan</label>
+                  </form>
+              </div>
           </div>
           <!-- Jenis Kelamin end -->
         </div>
@@ -91,5 +92,8 @@
         </div>
       </form>
     </div>
+
+    <script src="./JS/editprofile.js"></script>
   </body>
 </html>
+
