@@ -11,10 +11,7 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
     <!-- fontAwesome -->
     <link
@@ -27,97 +24,92 @@
   </head>
   <body>
     <!-- navbar start -->
-    <header> 
-        <h2 class="logo">sinKostan.</h2>
+    <header>
+      <h2 class="logo">sinKostan.</h2>
     </header>
     <!-- navbar end -->
 
     <!-- step progress bar start -->
     <div class="bar">
-    <div class="wrapper">
-      <h2>Booking Kost</h2>
-      <div class="progress-container">
-        <div class="progress" id="progress"></div>
-        <div class="progress-step">
-          <i class="fas fa-circle active"></i>Pilih Kamar
+      <div class="wrapper">
+        <h2>Booking Kost</h2>
+        <div class="progress-container">
+          <div class="progress" id="progress"></div>
+          <div class="progress-step"><i class="fas fa-circle active"></i>Pilih Kamar</div>
+          <div class="progress-step2"><i class="fas fa-circle"></i>Payment</div>
+          <div class="progress-step"><i class="fas fa-circle"></i>Selesai</div>
         </div>
-        <div class="progress-step2">
-          <i class="fas fa-circle"></i>Payment
-        </div>
-        <div class="progress-step">
-          <i class="fas fa-circle"></i>Selesai
+        <!-- step progress bar end -->
+
+        <!-- data penyewa kiri start -->
+        <div class="content-kiri">
+          <h3>Data Penyewa</h3>
+          <div class="content-penyewa">
+            <ul id="data-list">
+              <li>nama penghuni</li>
+              <li>nomer hp</li>
+              <li>email</li>
+              <li>jenis kelamin</li>
+              <li>pekerjaan</li>
+            </ul>
+          </div>
+          <hr class="horizontal-line" />
+          <p>Data di atas merupakan data penyewa yang akan digunakan untuk menempati kost. Siapkan kartu identitas anda saat akan check in</p>
         </div>
       </div>
-    <!-- step progress bar end -->
+      <!-- data penyewa kiri end -->
 
-    <!-- data penyewa kiri start -->
-    <div class="content-kiri">
-      <h3>Data Penyewa</h3>
-      <div class="content-penyewa">
-        <ul id="data-list">
-          <li>nama penghuni</li>
-          <li>nomer hp</li>
-          <li>email</li>
-          <li>jenis kelamin</li>
-          <li>pekerjaan</li>
+      <!-- pilihan kamar kanan start -->
+      <div class="content-kanan">
+        <h3>Pilihan Kamar</h3>
+        <ul class="carousel">
+          <li class="card">
+            <div class="imgbooking"><img src="./Assets/Kost Anggrek/Kamar Tidur 2.jpg" /></div>
+            <div class="content">
+              <div class="text">
+                <h2>Type A1</h2>
+                <p>Rp 800.000</p>
+              </div>
+            </div>
+          </li>
+          <li class="card1">
+            <div class="imgbooking"><img src="./Assets/booking/QR Code.png" /></div>
+            <div class="content">
+              <div class="text">
+                <p>Total yang perlu dibayar</p>
+                <h2>Rp 800.000</h2>
+                <p>silahkan lakukan pembayaran sejumlah nominal yang tertera melalui QR di atas</p>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
-      <hr class="horizontal-line">
-      <p>Data di atas merupakan data penyewa yang akan digunakan untuk menempati kost. Siapkan kartu identitas anda saat akan check in</p>
     </div>
+    <!-- pilihan kamar kanan end -->
+
+    <!-- button start -->
+    <div class="btn-container">
+      <button class="btn" onclick="window.location.href='bookingberhasil.html'">Lanjutkan Booking</button>
     </div>
-    <!-- data penyewa kiri end -->
-
-<!-- pilihan kamar kanan start -->
-<div class="content-kanan">
-  <h3>Pilihan Kamar</h3>
-  <ul class="carousel">
-    <li class="card">
-      <div class="imgbooking"><img src="./Assets/booking/booking1.jpeg"></div>
-      <div class="content">
-        <div class="text">
-      <h2>Nama Kamar</h2>
-      <p>Harga Kamar</p>
-      </div>
-      </div>
-    </li>
-    <li class="card1">
-      <div class="imgbooking"><img src="./Assets/booking/QR Code.png"></div>
-      <div class="content">
-        <div class="text">
-        <p>Total yang perlu dibayar</p>
-      <h2>Harga Kamar</h2>
-      <p>silahkan lakukan pembayaran sejumlah nominal yang tertera melalui QR di atas</p>
-      </div>
-      </div>
-    </li>
-  </ul>
-</div>
-</div>
-<!-- pilihan kamar kanan end -->
-
-<!-- button start -->
-<div class="btn-container">
-  <button class="btn" onclick="window.location.href='bookingberhasil.html'">Lanjutkan Booking</button>
-</div>
-<!-- button end  -->
-
+    <!-- button end  -->
 
     <!-- Footer start -->
     <div class="footer">
       <a href="">SinKosTan by @Group11</a>
       <ul>
-        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </li>
       </ul>
-    </div> 
+    </div>
     <!-- Footer end -->
 
     <script src="./JS/bookingreview.js"></script>
-
-
-
   </body>
 </html>
-  
