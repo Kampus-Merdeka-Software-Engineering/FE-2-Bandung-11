@@ -96,6 +96,7 @@ nav.navigation {
 .container > .title {
     font-size: 25px;
     font-weight: 500;
+    margin-top: 30px;
 }
 
 .container > .title::before {
